@@ -21,6 +21,7 @@ export class AppComponent {
   }
 
   appendData(newVehicle: any): void {
+    console.log(newVehicle);
     this.vehicles.push(newVehicle);
   }
 

@@ -1,11 +1,27 @@
 
 spring:
-  datasource:
-    driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5434/backenddb
-    username: backend
-    password: backend
-  jpa:
-    database-platform: org.hibernate.dialect.PostgreSQLDialect
-    hibernate:
-      ddl-auto: create-drop
+  Postgres:
+    datasource:
+      driver-class-name: org.postgresql.Driver
+      url: jdbc:postgresql://localhost:5434/backenddb
+      username: backend
+      password: backend
+    jpa:
+      database-platform: org.hibernate.dialect.PostgreSQLDialect
+      hibernate:
+        ddl-auto: create-drop
+
+#  Oracle:
+#    datasource:
+#      driver-class-name: oracle.jdbc.OracleDriver
+#      url: jdbc:oracle:thin:@localhost:1521:orcl
+#      username: SYS
+#      password: oracle
+#    jpa:
+#      properties:
+#        hibernate:
+#          dialect: org.hibernate.dialect.Oracle10gDialect
+#          format_sql: true
+#          ddl-auto: none
+#      show-sql: false
+
