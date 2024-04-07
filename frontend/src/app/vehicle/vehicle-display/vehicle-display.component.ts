@@ -2,7 +2,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 
-import {Vehicle} from './../vehicle';
+import {Vehicle} from '../vehicle';
 
 @Component({
   selector: 'app-vehicle-display',

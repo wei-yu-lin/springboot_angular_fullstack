@@ -40,10 +40,10 @@ build/
 /tmp
 /out-tsc
 /bazel-out
-.angular
+/frontend/.angular
 
 # Node
-node_modules
+/frontend/node_modules
 npm-debug.log
 yarn-error.log
 

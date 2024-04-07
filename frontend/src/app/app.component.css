@@ -1,5 +1,12 @@
 .main {
   padding: 20px;
   margin: auto;
-  width: 50%;
+  width: 100%;
+}
+
+.align-display {
+  display: inline-block; /* 將表單擺放在同一行 */
+  width: 45%; /* 調整表單的寬度 */
+  margin-right: 10px; /* 調整表單間的間距 */
+  vertical-align: top;
 }

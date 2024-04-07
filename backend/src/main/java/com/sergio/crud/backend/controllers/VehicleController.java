@@ -1,7 +1,11 @@
 package com.sergio.crud.backend.controllers;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.sergio.crud.backend.dtos.VehicleDto;
 import com.sergio.crud.backend.services.VehicleService;
+import com.sergio.crud.backend.yuwei.entity.StudentEntity;
+import com.sergio.crud.backend.yuwei.repositories.StudentsRepository;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -20,7 +24,6 @@ import java.util.List;
 @RestController
 @RequiredArgsConstructor
 public class VehicleController {
-
     private final VehicleService vehicleService;
 
     @GetMapping("/vehicles")
@@ -53,4 +56,7 @@ public class VehicleController {
     public ResponseEntity<VehicleDto> deleteVehicle(@PathVariable Long id) {
         return ResponseEntity.ok(vehicleService.deleteVehicle(id));
     }
+
+
+
 }

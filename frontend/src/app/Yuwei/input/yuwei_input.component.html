@@ -1,0 +1,23 @@
+
+<form #vehicleForm="ngForm" class="vehicle-form" (ngSubmit)="test()">
+
+  <mat-form-field class="vehicle-full-width">
+    <mat-label>EMPLOYEE_ID</mat-label>
+    <input name="brand" ngModel required matInput>
+  </mat-form-field>
+
+  <mat-form-field class="vehicle-full-width">
+    <mat-label>FIRST_NAME</mat-label>
+    <input name="model" ngModel required matInput>
+  </mat-form-field>
+
+  <mat-form-field class="vehicle-full-width">
+    <mat-label>LAST_NAME</mat-label>
+    <input name="year" ngModel required matInput>
+  </mat-form-field>
+
+  <button type="submit"  mat-raised-button color="primary">yuwei_post</button> <!--  (click)="test()"-->
+
+</form>
+
+

@@ -22,10 +22,14 @@ docker run -d -e POSTGRES_HOST_AUTH_METHOD=trust -e POSTGRES_USER=backend -e POS
 ```
 ### Oracle
 ```
-login with sysdba
 SID:orcl
-username:SYS
-password:oracle 
+username:system
+password:yuwei
+------------------
+username:system
+password:yuwei
+
+這兩組帳密都可以，透過指令:alter user system identified by yuwei;
 ```
 
 ## Frontend

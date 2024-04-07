@@ -1,10 +1,10 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
  import { CommonModule } from '@angular/common';
 
-import { VehicleDisplayComponent } from './../vehicle-display/vehicle-display.component';
-import { VehicleEditComponent } from './../vehicle-edit/vehicle-edit.component';
+import { VehicleDisplayComponent } from '../vehicle-display/vehicle-display.component';
+import { VehicleEditComponent } from '../vehicle-edit/vehicle-edit.component';
 
-import {Vehicle} from './../vehicle';
+import {Vehicle} from '../vehicle';
 
 @Component({
   selector: 'app-vehicle-wrapper',

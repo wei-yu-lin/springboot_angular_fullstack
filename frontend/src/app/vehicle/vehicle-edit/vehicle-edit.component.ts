@@ -11,7 +11,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatSelectModule} from '@angular/material/select';
 
-import {Vehicle} from './../vehicle';
+import {Vehicle} from '../vehicle';
 
 @Component({
   selector: 'app-vehicle-edit',
@@ -39,7 +39,7 @@ export class VehicleEditComponent {
 
     onSubmit(): void {
       this.http.post<Vehicle>(
-        "http://localhost:8080/vehicles",
+        "http://localhost:2408/vehicles",
         this.vehicle
       ).subscribe(data => {
         this.editDataEvent.emit(data);

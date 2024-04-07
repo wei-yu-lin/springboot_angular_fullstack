@@ -1,12 +1,19 @@
 <div class="main">
-  <h1>Add a new vehicle</h1>
+  <div class="align-display">
+    <h1>Add a new vehicle</h1>
+    <app-vehicle-input
+      (newDataEvent)="appendData($event)"/>
+  </div>
+<!--  <div class="align-display">-->
+<!--    <h1>Add a new FARADAY data</h1>-->
+<!--    <yuwei_selector-input/>-->
+<!--  </div>-->
 
-  <app-vehicle-input
-                      (newDataEvent)="appendData($event)"/>
 
-  <h2>My vehicles list</h2>
+  <h2 style="margin-top: 20px;">vehicles list</h2>
   <app-vehicle-wrapper *ngFor="let vehicle of vehicles"
                        (removeItemEvent)="removeItem($event)"
                        [vehicle]="vehicle"
   />
+
 </div>
